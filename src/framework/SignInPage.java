@@ -3,10 +3,15 @@ package framework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class SignInPage {
 	// http://127.0.0.1:5500/Html/bootstrap/sign-in/
 	WebDriver driver = null;
+	private static final By EMAIL_INPUT = By.id("inputEmail");
+	
+	@FindBy(id="inputEmail")
+	WebElement inputEmail;
 
 	public SignInPage(WebDriver driver) {
 		this.driver = driver;

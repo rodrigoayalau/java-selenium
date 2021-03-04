@@ -1,5 +1,8 @@
 package framework;
 
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
