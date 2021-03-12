@@ -17,8 +17,7 @@ public class Setup {
 				System.out.println("Ejecutando IE");
 				break;
 		}
-		//driver.get("http://127.0.0.1:5500/Html/bootstrap/checkout/");
-		driver.get("D:\\Development/Html/bootstrap/sign-in/index.html");
+		driver.get("D://Development/Html/bootstrap/sign-in/index.html");
 		driver.manage().window().maximize();
 		return driver;
 	}

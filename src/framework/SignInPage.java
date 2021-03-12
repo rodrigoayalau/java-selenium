@@ -1,12 +1,13 @@
 package framework;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SignInPage {
-	// http://127.0.0.1:5500/Html/bootstrap/sign-in/
 	WebDriver driver = null;
 	private static final By EMAIL_INPUT = By.id("inputEmail");
 	
@@ -18,6 +19,7 @@ public class SignInPage {
 	}
 
 	public boolean setKeys(String email, String password) {
+		boolean success;
 		try {
 			WebElement emailInput = driver.findElement(By.id("inputEmail"));
 			emailInput.sendKeys(email);
@@ -25,11 +27,11 @@ public class SignInPage {
 			passwordInput.sendKeys(password);
 			WebElement submit = driver.findElement(By.xpath("/html/body/form/button"));
 			submit.click();
-			return true;
+			success = true;
 		} catch (Exception e) {
-			return false;
+			success = false;
 		}
-
+		return success;
 	}
 
 }

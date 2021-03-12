@@ -5,9 +5,9 @@
     <classes>
       <class name="framework.Main">
         <methods>
+          <include name="dashboardPageTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="firstTest"/>
         </methods>
       </class> <!-- framework.Main -->
     </classes>
