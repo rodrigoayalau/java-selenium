@@ -1,6 +1,5 @@
 package framework;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -73,9 +72,9 @@ public class DashboardPage {
 	// Implicit await  waits for an element that is not available in the moment.
 	public boolean promoValidationImplicit() {
 		boolean success;
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		try {
-			WebElement promoCodeBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='text-success']")));
+			WebElement promoCodeBox = driver.findElement(By.xpath("//span[@class='text-success']"));
 			if(promoCodeBox.isDisplayed())
 				System.out.print("Visible");
 			else

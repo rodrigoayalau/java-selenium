@@ -5,7 +5,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Main extends Setup {
+public class Main2 extends Setup {
 
 	String email = "admin";
 	String password = "password";
