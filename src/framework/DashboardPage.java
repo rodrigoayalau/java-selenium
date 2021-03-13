@@ -12,8 +12,11 @@ public class DashboardPage {
 
 	WebDriver driver = null;
 	//WebDriverWait wait = new WebDriverWait(driver, 5);
-	
-	private By BUTTON_REDEEM = By.xpath("//*[@id='redeem-the-code']");
+	 /*
+	  * Absolute xpath = complete xpath from html to the element
+	  * Relative xpath = elements that identifies that element int he dome (id, class, ...)
+	  * */
+	private By BUTTON_REDEEM = By.xpath("//*[@id='redeem-the-code']//child::button[@class='btn']");
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -58,9 +61,9 @@ public class DashboardPage {
 		try {
 			WebElement promoCodeBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='text-success']")));
 			if(promoCodeBox.isDisplayed())
-				System.out.print("Visible");
+				System.out.println("Visible");
 			else
-				System.out.print("!Visible");
+				System.out.println("!Visible");
 			success = true;
 		} catch (Exception e) {
 			e.printStackTrace();
