@@ -12,9 +12,9 @@ public class EntryPoint {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:/drivers_explorers/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/drivers_explorers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://127.0.0.1:5500/Html/bootstrap/checkout/");
+		driver.get("D:/Development/html/bootstrap/checkout/index.html");
 		System.out.println(driver.getTitle());
 		driver.manage().window().maximize();
 		
