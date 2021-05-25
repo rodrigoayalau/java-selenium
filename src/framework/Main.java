@@ -28,7 +28,8 @@ public class Main extends Setup {
 			File file = new File("D:\\Development\\Java\\java-selenium\\src\\sources\\data.properties");
 			fileInput = new FileInputStream(file);
 			properties.load(fileInput);
-			System.out.println(properties.get("email"));
+			System.out.println(properties.get("emailData"));
+			System.out.println(properties.getProperty("emailData"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		

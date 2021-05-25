@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Setup {
 	
-	WebDriver driver = null;
+	public WebDriver driver = null;
 	
 	public WebDriver initializeExplorer(String theDriver) {
 		switch(theDriver) {

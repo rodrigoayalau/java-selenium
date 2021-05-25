@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-29T20:02:10 CST" name="Default suite" finished-at="2021-03-29T20:02:12 CST" duration-ms="2464">
+  <suite started-at="2021-03-29T20:05:35 CST" name="Default suite" finished-at="2021-03-29T20:05:38 CST" duration-ms="2389">
     <groups>
     </groups>
-    <test started-at="2021-03-29T20:02:10 CST" name="Default test" finished-at="2021-03-29T20:02:12 CST" duration-ms="2464">
+    <test started-at="2021-03-29T20:05:35 CST" name="Default test" finished-at="2021-03-29T20:05:38 CST" duration-ms="2389">
       <class name="framework.Main">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:framework.Main@2928854b]" started-at="2021-03-29T20:02:10 CST" name="setUp" finished-at="2021-03-29T20:02:11 CST" duration-ms="1681" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:framework.Main@2928854b]" started-at="2021-03-29T20:05:35 CST" name="setUp" finished-at="2021-03-29T20:05:37 CST" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestPage()[pri:1, instance:framework.Main@2928854b]" started-at="2021-03-29T20:02:11 CST" name="loginTestPage" finished-at="2021-03-29T20:02:12 CST" duration-ms="758" status="PASS">
+        <test-method signature="loginTestPage()[pri:1, instance:framework.Main@2928854b]" started-at="2021-03-29T20:05:37 CST" name="loginTestPage" finished-at="2021-03-29T20:05:38 CST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestPage -->
